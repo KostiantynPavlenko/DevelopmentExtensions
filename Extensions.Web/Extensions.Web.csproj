@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <PackageId>DevelopmentExtensions</PackageId>
+        <Authors>Kostiantyn Pavlenko</Authors>
+        <Description>Result types and ActionResult extensions methods</Description>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageTags>DevelopmentExtensions</PackageTags>
+        <Title>DevelopmentExtensions</Title>
+        <RepositoryUrl>https://github.com/KostiantynPavlenko/DevelopmentExtensions</RepositoryUrl>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    </ItemGroup>
+
+</Project>
