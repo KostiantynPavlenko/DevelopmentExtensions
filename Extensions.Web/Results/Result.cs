@@ -12,7 +12,7 @@ namespace Extensions.Web.Results
         }
     
         public HttpStatusCode? StatusCode { get; }
-        protected bool IsSuccess { get;}
+        public bool IsSuccess { get;}
         public bool IsFailure => !IsSuccess;
         public Error Error { get; }
         public static Result Success() => new(true, Error.None, HttpStatusCode.OK);
