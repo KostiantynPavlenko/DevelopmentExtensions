@@ -4,22 +4,22 @@ namespace Extensions.Web.Results
 {
     public class Result
     {
-        protected Result(bool isSuccess, Error error, HttpStatusCode? statusCode = null)
+        protected Result(bool isSuccess, Error error, ResultState? statusCode = null)
         {
             IsSuccess = isSuccess;
             Error = error;
-            StatusCode = statusCode;
+            State = statusCode;
         }
-    
-        public HttpStatusCode? StatusCode { get; }
+        
+        public ResultState? State { get; }
         public bool IsSuccess { get;}
         public bool IsFailure => !IsSuccess;
         public Error Error { get; }
-        public static Result Success() => new(true, Error.None, HttpStatusCode.OK);
+        public static Result Success() => new(true, Error.None, ResultState.Ok);
         private static Result<TValue> Success<TValue>(TValue value) => new(value, true, Error.None);
     
-        public static Result UnprocessableEntity(Error error) => new(false, error, HttpStatusCode.UnprocessableEntity);
-        public static Result Failure(Error error) => new(false, error, HttpStatusCode.BadRequest);
+        public static Result UnprocessableEntity(Error error) => new(false, error, ResultState.UnprocessableEntity);
+        public static Result Failure(Error error) => new(false, error, ResultState.BadRequest);
         private static Result<TValue> Failure<TValue>(Error error) => new(default,false, error);
         protected static Result<TValue> Create<TValue>(TValue value) => value is not null ? Success(value) : Failure<TValue>(Error.NullValue);
     }
