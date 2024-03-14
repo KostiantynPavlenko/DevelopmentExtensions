@@ -1,0 +1,9 @@
+
+ˆcsharpsquid:S2971Â"eDrop this useless call to 'ToList' or replace it by 'AsEnumerable' if you are using LINQ to Entities.(Úş¡şÿÿÿÿ
+Ecsharpsquid:S2971Â""Use 'Count' property here instead.(Úş¡şÿÿÿÿ
+ocsharpsquid:S4581Ä"QUse 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.(×ËÒµ
+ocsharpsquid:S4581Ç"QUse 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.(Ş•ÚÛ
+ocsharpsquid:S4581Ñ"QUse 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.(Ş•ÚÛ
+Icsharpsquid:S1168Ø"+Return an empty collection instead of null.(×ËÒµ
+Tcsharpsquid:S6580•"1Use a format provider when parsing date and time.(¼º±àüÿÿÿÿ
+Tcsharpsquid:S6580Ÿ"1Use a format provider when parsing date and time.(¼º±àüÿÿÿÿ

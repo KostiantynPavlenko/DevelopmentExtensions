@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Web", "Extensions.Web\Extensions.Web.csproj", "{1371EEE3-0051-406E-B3E4-4E26C5BE95A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Development.Core", "Development.Core\Development.Core.csproj", "{1371EEE3-0051-406E-B3E4-4E26C5BE95A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
